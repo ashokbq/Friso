@@ -1,0 +1,1540 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Friso</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animation.css" />
+<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.0-beta.1.css" />
+<link rel="stylesheet" type="text/css" href="css/screen.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.css" />
+<script src="js/script.js" type="text/javascript"> </script>
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.3.0-beta.1.js" type="text/javascript"></script>
+<script src="js/lightbox.js" type="text/javascript"></script>
+<script type='text/javascript'>
+	 var p2graph=0;
+	 var p3graph=0;
+$(document).bind('pagebeforeshow', function () {
+p2graph=0;
+p3graph=0;
+	 $('#an-anim li').addClass('run');
+  $("#an-obj-5 img,#an-obj-6 img,#an-obj-7 img,#an-obj-8 img,#an-obj-9 img,#an-obj-16 img,#an-obj-17 img,#an-obj-18 img,#an-obj-19 img,#an-obj-20 img,#an-obj-21 img,#an-obj-23 img,#an-obj-37 img,#an-obj-38 img,#an-obj-39 img,#an-obj-40 img,#an-obj-44 img,#an-obj-45 img,#an-obj-46 img,#an-obj-47 img,#an-obj-53 img,#an-obj-54 img,#an-obj-55 img,#an-obj-56 img,#an-obj-57 img,#an-obj-58 img").hide();
+var activepage= $.mobile.activePage.attr('id');
+	if(activepage=='page2')
+	{			
+			$('#btn1').button('enable');
+			$('#btn2').button('enable');
+			$('#btn3').button('enable');
+	}
+	else if(activepage=='page3')
+	{
+	$("#btn1_3").button('enable');
+	$("#btn2_3").button('enable');
+	$("#btn3_3").button('enable');
+	$("#btn4_3").button('enable');
+	$("#btn5_3").button('enable');
+	$("#btn6_3").button('enable');
+	$("#btn7_3").button('enable');
+	}
+
+});
+
+$(document).ready(function() {
+	
+	/* Slide 20*/	
+		$('#an-anim li').addClass('run');
+		
+		$("#an-obj-58 img").delay(1000).fadeIn(400);
+		 	
+		$("#an-obj-53 img").delay(2000).fadeIn(400);
+		
+		$("#an-obj-54 img").delay(3000).fadeIn(400);
+				
+		$("#an-obj-55 img").delay(4000).fadeIn(400);
+				
+		$("#an-obj-56 img").delay(5000).fadeIn(400);
+				
+		$("#an-obj-57 img").delay(6000).fadeIn(400);
+	/* Page 2 interactivity */
+p2graph=0;	
+		
+$('#btn1').live("click", function()
+{
+		p2graph++;	
+	    $("#an-obj-5 img").show("slow");
+		$("#btn1").attr('disabled',true);
+		showanim();
+}); 
+$('#btn2').live("click", function()
+{
+		p2graph++;
+	
+        $("#an-obj-6 img").show("slow");			
+		$("#btn2").attr('disabled',true);
+				showanim();
+});		
+$('#btn3').live("click", function()
+{
+			p2graph++;			
+	        $("#an-obj-7 img").show("slow");			
+			$("#btn3").attr('disabled',true);
+					showanim();
+});
+
+function showanim()
+{	
+if(p2graph == 3)
+{	
+$("#an-obj-8 img").delay(5000).show("slow");
+$("#an-obj-9 img").delay(5000).show("slow");
+reset_page2();
+}
+
+}
+function reset_page2()
+{	
+	p2graph=0;
+}
+
+/* end of page 2 interactivity */
+/* page 3 inter activity */
+$('#btn1_3').live("click", function()
+{
+		
+	        $("#an-obj-16 img").show("slow");
+		
+});
+$('#btn2_3').live("click", function()
+{
+				
+	        $("#an-obj-17 img").show("slow");
+			
+});
+$('#btn3_3').live("click", function()
+{
+			
+	        $("#an-obj-18 img").show("slow");
+			
+});
+$('#btn4_3').live("click", function()
+{
+			
+	        $("#an-obj-19 img").show("slow");
+		
+});
+$('#btn5_3').live("click", function()
+{
+	        $("#an-obj-20 img").show("slow");
+			 
+});
+$('#btn6_3').live("click", function()
+{
+					        $("#an-obj-21 img").show("slow");
+			 
+});
+$('#btn7_3').live("click", function()
+{
+					        $("#an-obj-23 img").show("slow");
+			 
+});
+/* end of page 3 interactivity */
+
+$('#btn1_4').live("click tap",function()
+{
+	$("#an-obj-26 img").show("slow");
+	$('#an-obj-27').show("slow");
+}); 
+$('#btn2_4').live("click tap",function()
+{
+	$("#an-obj-28 img").show("slow");	
+}); 
+$('#btn3_4').live("click tap",function()
+{
+	$("#an-obj-29 img").show("slow");	
+}); 
+$('#btn4_4').live("click tap",function()
+{
+	$("#an-obj-30 img").show("slow");	
+}); 
+$('#btn5_4').live("click tap",function()
+{
+	$("#an-obj-31 img").show("slow");	
+});			
+});
+
+/* Page 4 button interaction */
+$(function(){
+$('#btn1_4').live("click",function()
+{
+		window.location='index.html#page4b'
+});
+});
+$(function(){
+$('#btn2_4').live("click",function()
+{
+		window.location='index.html#page4c'
+});
+});
+
+$(function(){
+$('#btn1_4b').live("click",function()
+{
+		window.location='index.html#page4c'
+});
+});
+$(function(){
+$('#btn1_4c').live("click",function()
+{
+		window.location='index.html#page4b'
+});
+});
+/* Page 17 interactive */
+   $('#btn171').live("click", function()
+{
+	    $("#an-obj-37 img").show();
+});
+  $('#btn172').live("click", function()
+{
+	    $("#an-obj-38 img").show();
+});
+  $('#btn173').live("click", function()
+{
+	    $("#an-obj-39 img").show();
+});
+  $('#btn174').live("click", function()
+{
+	    $("#an-obj-40 img").show();
+});
+/* Page 18 interactive */
+   $('#btn191').live("click", function()
+{
+	    $("#an-obj-44 img").show();
+});
+  $('#btn192').live("click", function()
+{
+	    $("#an-obj-45 img").show();
+});
+  $('#btn193').live("click", function()
+{
+	    $("#an-obj-46 img").show();
+});
+  $('#btn194').live("click", function()
+{
+	    $("#an-obj-47 img").show();
+});
+    $('#page29').live("swiperight", function(){
+     window.location="index.html#page27";
+		 $('#an-anim li').addClass('run');
+    });
+
+/* Swipping through pages */	
+$(document).on('swipeleft', 'article', function(event){
+    if(event.handled !== true) // This will prevent event triggering more then once
+    { 
+	if($.mobile.activePage.attr('id') != 'page37')
+	{
+        var nextpage = $(this).next('article[data-role="page"]');
+        // swipe using id of next page if exists
+        if (nextpage.length > 0) {
+            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+			 $('#an-anim li').addClass('run');	
+			  if($.mobile.activePage.attr('id') == 'page20')
+			  {
+			 location.reload(true);			
+			  }
+        }
+	}
+         event.handled = true;
+	}
+ 	//alert(p2graph);
+
+    return false;         
+});
+
+$(document).on('swiperight', 'article', function(event){   
+    if(event.handled !== true) // This will prevent event triggering more then once
+    {   
+        var prevpage = $(this).prev('article[data-role="page"]');
+        if (prevpage.length > 0) {
+            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+			 $('#an-anim li').addClass('run');		
+			  if($.mobile.activePage.attr('id') == 'page20')
+			  {
+			 location.reload(true);			
+			  }
+        }
+        event.handled = true;
+  
+	//alert(p2graph);
+    }
+    return false;            
+});
+
+</script>
+</head>
+<body style="margin:0;">
+<!-- 1 -->
+<article data-role="page" id="page1" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide01" >
+     <div class="an-stage">
+      <div id="an-obj-60">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-61">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-62">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-63">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 2 -->
+<article data-role="page" id="page2" class="demo-page" data-dom-cache="true">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide2a" >
+     <div class="an-stage">
+      <div id="an-obj-1">
+       <form class="page2_btn1">
+        <div class="btngraph">
+         <input type="button" name="btn1" id="btn1" />
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-2">
+       <form class="page2_btn2">
+        <div class="btngraph">
+         <input type="button" name="btn2" id="btn2" />
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-3">
+       <form class="page2_btn3">
+        <div class="btngraph">
+         <input type="button" name="btn3" id="btn3" />
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-4">
+       <div><img  height="311" width="111"  src="assets/slide02_lbl_ageGroup.png"></div>
+      </div>
+      <div id="an-obj-8">
+       <div><img  height="51" width="600"  src="assets/Slide02a-Circle.png" ></div>
+      </div>
+      <div id="an-obj-5">
+       <div><img  height="328" width="124"  src="assets/Slide2_G1.png"></div>
+      </div>
+      <div id="an-obj-6">
+       <div><img  height="328" width="123"  src="assets/Slide2_G2.png"></div>
+      </div>
+      <div id="an-obj-7">
+       <div><img  height="328" width="131"  src="assets/Slide2_G3.png"></div>
+      </div>
+      <div id="an-obj-9">
+       <div><img  height="61" width="923"  src="assets/slide02_footer.png"></div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+
+<!-- 3A -->
+<article data-role="page" id="page3" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide3a" >
+     <div class="an-stage">
+      <div id="an-obj-10">
+       <div><img  height="32" width="66"  src="assets/Sld03_B1.png"></div>
+       <form class="page3_btn1">
+        <div class="btngraph_3">
+         <input type="button" name="btn1_3" id="btn1_3"/>
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-11">
+       <div><img  height="36" width="78"  src="assets/Sld03_B2.png"></div>
+       <form class="page3_btn2">
+        <div class="btngraph_3">
+         <input type="button" name="btn2_3" id="btn2_3"/>
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-12">
+       <div><img  height="37" width="72"  src="assets/Sld03_B3.png"></div>
+       <form class="page3_btn3">
+        <div class="btngraph_3">
+         <input type="button" name="btn3_3" id="btn3_3"/>
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-13">
+       <div><img  height="36" width="79"  src="assets/Sld03_B4.png">
+        <form class="page3_btn4">
+         <div class="btngraph_3">
+          <input type="button" name="btn4_3" id="btn4_3"/>
+         </div>
+        </form>
+       </div>
+      </div>
+      <div id="an-obj-14">
+       <div><img  height="39" width="107"  src="assets/Sld03_B5.png"></div>
+       <form class="page3_btn5">
+        <div class="btngraph_3">
+         <input type="button" name="btn5_3" id="btn5_3"/>
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-15">
+       <div><img  height="38" width="93"  src="assets/Sld03_B6.png"></div>
+       <form class="page3_btn6">
+        <div class="btngraph_3">
+         <input type="button" name="btn6_3" id="btn6_3"/>
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-22">
+       <div><img  height="31" width="64"  src="assets/Slide03_B7.png"></div>
+       <form class="page3_btn7">
+        <div class="btngraph_3">
+         <input type="button" name="btn7_3" id="btn7_3"/>
+        </div>
+       </form>
+      </div>
+      <div id="an-obj-16">
+       <div><img  height="249" width="110"  src="assets/Sld03_G1.png"></div>
+      </div>
+      <div id="an-obj-17">
+       <div><img  height="254" width="100"  src="assets/Sld03_G2.png"></div>
+      </div>
+      <div id="an-obj-18">
+       <div><img  height="249" width="97"  src="assets/Sld03_G3.png"></div>
+      </div>
+      <div id="an-obj-19">
+       <div><img  height="249" width="103"  src="assets/Sld03_G4.png"></div>
+      </div>
+      <div id="an-obj-20">
+       <div><img  height="248" width="94"  src="assets/Sld03_G5.png"></div>
+      </div>
+      <div id="an-obj-21">
+       <div><img  height="248" width="116"  src="assets/Sld03_G6.png"></div>
+      </div>
+      <div id="an-obj-23">
+       <div><img  height="283" width="110" src="assets/Sld03_G7.png" style="margin-top:-34px;"></div>
+      </div>
+      <div id="an-obj-24">
+       <div><img  height="61" width="923"  src="assets/Slide03a_Footer.png"></div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 4a -->
+<article data-role="page" id="page4a" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide4a" >
+     <div class="an-stage">
+      <div id="an-obj-25" class="single">
+       <a rel="lightbox" href="assets/edtailer-ver-9-05.png" data-settings='close-button-position:right'>
+        <div>
+         <img src="assets/edtailer-ver-9-04_HardStools.png"></div>
+       </a>
+      </div>
+      <div id="an-obj-26" class="single">
+       <a rel="lightbox" href="assets/edtailer-ver-9-06.png" data-settings='close-button-position:right'>
+        <div>
+         <img src="assets/edtailer-ver-9-04_NoProblem.png"></div>
+       </a>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 4b -->
+<!--<article data-role="page" id="page4b" class="data-value">
+  <div data-role="content" class="content">
+    <div id="an-anim">
+      <ol>
+        <li id="Slide4b" >
+          <div class="an-stage">
+            <div id="an-obj-27">
+              <div><img  height="28" width="106"  src="assets/edtailer-ver-9-05_NoProblem.png"></div>
+              <form class="page4b_btn1">
+                <div class="btngraph_4">
+                  <input type="button" name="btn1_4b" id="btn1_4b"/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</article>
+4c 
+<article data-role="page" id="page4c" class="data-value">
+  <div data-role="content" class="content">
+    <div id="an-anim">
+      <ol>
+        <li id="Slide4c" >
+          <div class="an-stage">
+            <div id="an-obj-28">
+              <div><img  height="27" width="99"  src="assets/edtailer-ver-9-06_HardStools.png"></div>
+              <form class="page4c_btn1">
+                <div class="btngraph_4">
+                  <input type="button" name="btn1_4c" id="btn1_4c"/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</article>-->
+<!-- 5 -->
+<article data-role="page" id="page5" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide5" >
+     <div class="an-stage">
+      <div id="an-obj-29">
+       <div><img  height="52" width="31"  src="assets/Slide05-G1.png"></div>
+      </div>
+      <div id="an-obj-30">
+       <div><img  height="177" width="94"  src="assets/Slide05-G2.png"></div>
+      </div>
+      <div id="an-obj-31">
+       <div><img  height="212" width="96"  src="assets/Slide05-G3.png"></div>
+      </div>
+      <div id="an-obj-32">
+       <div><img  height="254" width="95"  src="assets/Slide05-G4.png"></div>
+      </div>
+      <div id="an-obj-33">
+       <div><img  height="4" width="529"  src="assets/Slide05-Baseline.png"></div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 8 -->
+<article data-role="page" id="page8" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide8" >
+     <div class="an-stage">
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 9 -->
+<article data-role="page" id="page9" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide9" >
+     <div class="an-stage">
+      <div id="an-obj-64">
+       <div><a href="#page10" rel="external"><img  height="61" width="373"  src="assets/edtailer-ver-9-09_G2G.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-65">
+       <div><a href="#page22" rel="external"><img  height="67" width="683"  src="assets/edtailer-ver-9-09_bur2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-66">
+       <div><a href="#page37" rel="external"><img  height="59" width="424"  src="assets/edtailer-ver-9-09_but3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 10 -->
+<article data-role="page" id="page10" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide10" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 11 -->
+<article data-role="page" id="page11" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide11" >
+     <div class="an-stage">
+      <div id="an-obj-34">
+       <div>
+        <a href="#page12" rel="external"><img  height="418" width="606"  src="assets/Slide11_img1.gif"></a>
+       </div>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 12 -->
+<article data-role="page" id="page12" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide12" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 13 -->
+<article data-role="page" id="page13" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide13" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 14 -->
+<article data-role="page" id="page14" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide14" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 15 -->
+<article data-role="page" id="page15" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide15" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 16 -->
+<article data-role="page" id="page16" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide16" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 17 -->
+<article data-role="page" id="page17" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide17" >
+     <div class="an-stage">
+      <div id="an-obj-35">
+       <div id="an-obj-36">
+        <div><img src="assets/Slide17_B1.png"></div>
+        <form class="page17_btn1">
+         <div class="btn171">
+          <input type="button" name="btn171" id="btn171"/>
+         </div>
+        </form>
+        <div id="an-obj-37">
+         <img src="assets/Slide17_Pop1.png">
+        </div>
+       </div>
+       <!-- Btn2 -->
+       <div id="an-obj-42">
+        <div><img src="assets/Slide17_B2.png"></div>
+        <form class="page17_btn2">
+         <div class="btn171">
+          <input type="button" name="btn172" id="btn172"/>
+         </div>
+        </form>
+        <div id="an-obj-38">
+         <img src="assets/Slide17_Pop2.png">
+        </div>
+       </div>
+       <!-- Btn3 -->
+       <div id="an-obj-41">
+        <div><img src="assets/Slide17_B3.png"></div>
+        <form class="page17_btn3">
+         <div class="btn171">
+          <input type="button" name="btn173" id="btn173"/>
+         </div>
+        </form>
+        <div id="an-obj-39">
+         <img src="assets/Slide17_Pop3.png">
+        </div>
+       </div>
+       <!-- Btn4 -->
+       <div id="an-obj-43">
+        <div><img src="assets/Slide17_B4.png"></div>
+        <form class="page17_btn4">
+         <div class="btn171">
+          <input type="button" name="btn174" id="btn174"/>
+         </div>
+        </form>
+        <div id="an-obj-40">
+         <img src="assets/Slide17_Pop4.png">
+        </div>
+       </div>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 18 -->
+<article data-role="page" id="page18" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide18" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 19 -->
+<article data-role="page" id="page19" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide17" >
+     <div class="an-stage">
+      <div id="an-obj-52">
+       <div id="an-obj-48">
+        <div><img src="assets/Slide19_B1.png"></div>
+        <form class="page19_btn1">
+         <div class="btn191">
+          <input type="button" name="btn191" id="btn191"/>
+         </div>
+        </form>
+        <div id="an-obj-44">
+         <img src="assets/Slide19_pop1.png">
+        </div>
+       </div>
+       <div id="an-obj-49">
+        <div><img src="assets/Slide19_B2.png"></div>
+        <form class="page19_btn2">
+         <div class="btn191">
+          <input type="button" name="btn192" id="btn192"/>
+         </div>
+        </form>
+        <div id="an-obj-45">
+         <img src="assets/Slide19_pop2.png" >
+        </div>
+       </div>
+       <div id="an-obj-50">
+        <div><img src="assets/Slide19_B3.png"></div>
+        <form class="page19_btn3">
+         <div class="btn191">
+          <input type="button" name="btn193" id="btn193"/>
+         </div>
+        </form>
+        <div id="an-obj-46">
+         <img src="assets/Slide19_pop3.png" >
+        </div>
+       </div>
+       <div id="an-obj-51">
+        <div><img  src="assets/Slide19_B4.png"></div>
+        <form class="page19_btn4">
+         <div class="btn191">
+          <input type="button" name="btn194" id="btn194"/>
+         </div>
+        </form>
+        <div id="an-obj-47">
+         <img src="assets/Slide19_pop4.png">
+        </div>
+       </div>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 20 -->
+<article data-role="page" id="page20" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide20" >
+     <div class="an-stage">
+      <div id="an-obj-58">
+       <img src="assets/edtailer-ver-9-20-img1.png" height="119" width="155">
+      </div>
+      <div id="an-obj-53">
+       <img src="assets/edtailer-ver-9-20-img2-grass.png" width="264" height="195">
+      </div>
+      <div id="an-obj-54">
+       <img src="assets/edtailer-ver-9-20-img3-MILKING.png" width="275" height="197">
+      </div>
+      <div id="an-obj-55">
+       <img src="assets/edtailer-ver-9-20-img4-MilkTransport.png" width="311" height="239">
+      </div>
+      <div id="an-obj-56">
+       <img src="assets/edtailer-ver-9-20-img5-MilkProcessing.png" width="387" height="198">
+      </div>
+      <div id="an-obj-57">
+       <img src="assets/edtailer-ver-9-20-img6-MilkTesting.png" height="299" width="248">
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 21 -->
+<article data-role="page" id="page21" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide21" >
+     <div class="an-stage">
+      <div id="an-obj-64">
+       <div><a href="#page10" rel="external"><img  height="61" width="373"  src="assets/edtailer-ver-9-09_G2G.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-65">
+       <div><a href="#page22" rel="external"><img  height="67" width="683"  src="assets/edtailer-ver-9-09_bur2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-66">
+       <div><a href="#page37" rel="external"><img  height="59" width="424"  src="assets/edtailer-ver-9-09_but3.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 22 -->
+<article data-role="page" id="page22" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide22" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 23 -->
+<article data-role="page" id="page23" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide23" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 24 -->
+<article data-role="page" id="page24" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide24" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 25 -->
+<article data-role="page" id="page25" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide25" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 26 -->
+<article data-role="page" id="page26" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide26" >
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 27 -->
+<article data-role="page" id="page27" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide27" >
+     <div class="an-stage">
+      <!-- Left button -->
+      <div id="an-obj-71"><img src="assets/edtailer-ver-9-27_img1.png">
+       <div id="an-obj-711"  class="single">
+        <a rel="lightbox" href="assets/edtailer-ver-9-28.png" data-settings='close-button-position:right'>
+         <div>
+          <img src="assets/playbtn.png"></div>
+        </a>
+       </div>
+      </div>
+      <!-- Right button -->
+      <div id="an-obj-72">
+       <a href="#page29" rel="external"><img src="assets/edtailer-ver-9-27_img2.png"></a>
+      </div>
+      <div id="an-obj-67" >
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 28 HTML -->
+<!--<article data-role="page" id="page28" class="data-value">
+  <div data-role="content" class="content">
+    <div id="an-anim">
+      <ol>
+        <li id="Slide28">
+          <div class="an-stage">
+            <div id="an-obj-67">
+              <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a></div>
+            </div>
+            <div id="an-obj-68">
+              <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a></div>
+            </div>
+            <div id="an-obj-69">
+              <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a></div>
+            </div>
+            <div id="an-obj-70">
+              <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a></div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</article>-->
+
+<!-- 32 -->
+<article data-role="page" id="page32" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide32">
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 33 -->
+<article data-role="page" id="page33" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide33">
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 34 -->
+<article data-role="page" id="page34" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide34">
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 35 -->
+<article data-role="page" id="page35" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide35">
+     <div class="an-stage">
+      <div id="an-obj-75" class="single"><a rel="lightbox" href="assets/edtailer-ver-9-35pop.png" data-settings='close-button-position:right'>
+        <div>
+         <img src="assets/edtailer-ver-9-35-butMoreInfo.png"></div>
+       </a>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 36 -->
+<article data-role="page" id="page36" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide36" >
+     <div class="an-stage">
+      <div id="an-obj-64">
+       <div><a href="#page10" rel="external"><img  height="61" width="373"  src="assets/edtailer-ver-9-09_G2G.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-65">
+       <div><a href="#page22" rel="external"><img  height="67" width="683"  src="assets/edtailer-ver-9-09_bur2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-66">
+       <div><a href="#page37" rel="external"><img  height="59" width="424"  src="assets/edtailer-ver-9-09_but3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 37 -->
+<article data-role="page" id="page37" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide37">
+     <div class="an-stage">
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 29 -->
+<article data-role="page" id="page29" class="data-value">
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide29">
+     <div class="an-stage">
+      <div id="an-obj-73">
+       <div><a href="#page30" rel="external"><img src="assets/edtailer-ver-9-29_butMore.png">
+        </a>
+       </div>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+<!-- 30 -->
+<article data-role="page" id="page30" class="data-value" >
+ <div data-role="content" class="content">
+  <div id="an-anim">
+   <ol>
+    <li id="Slide30">
+     <div class="an-stage">
+      <div id="an-obj-74" class="single"><a rel="lightbox" href="assets/edtailer-ver-9-30_pop.png" data-settings='close-button-position:right'>
+        <div>
+         <img src="assets/edtailer-ver-9-30-img1.png"></div>
+       </a>
+      </div>
+      <div id="an-obj-67">
+       <div><a href="#page2" rel="external"><img  height="39" width="57"  src="assets/but_icon1.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-68">
+       <div><a href="#page10" rel="external"><img  height="39" width="57"  src="assets/but_icon2.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-69">
+       <div><a href="#page22" rel="external"><img  height="39" width="57"  src="assets/but_icon3.png"></a>
+       </div>
+      </div>
+      <div id="an-obj-70">
+       <div><a href="#page37" rel="external"><img  height="39" width="57"  src="assets/but_icon4.png"></a>
+       </div>
+      </div>
+     </div>
+    </li>
+   </ol>
+  </div>
+ </div>
+</article>
+</body>
+</html>
