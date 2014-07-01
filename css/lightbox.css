@@ -29,7 +29,7 @@ left:50%;
 #lightbox img {
   width: auto;
   height: auto;
-      margin-top: -35px;
+  margin-top: -35px;
 }
 /* line 27, ../sass/lightbox.sass */
 #lightbox a img {

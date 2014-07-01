@@ -25,6 +25,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+	outline:none;
 }
 
 /* line 20, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -100,7 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *----------------------------------------------- */
 /* line 33, ../sass/screen.sass */
 body {
-  background: #222222 url(../images/bg-checker.png);
+  background: #222222;
 }
 
 /* line 36, ../sass/screen.sass */
@@ -112,6 +113,7 @@ body, input, textarea {
   font-family: "Open Sans", "lucida grande", tahoma, sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
+		outline:none;
 }
 
 /* line 45, ../sass/screen.sass */
